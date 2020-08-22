@@ -1,0 +1,33 @@
+Online Dictionary with Python
+
+Given json file ('data.json') is our physical dictionary containing meanings of every word. 
+So, arr is the list of all the words in the dictionary or data.json.
+
+get_close_matches(word, list_to_be_matched = arr, n=3, cutoff=0.6)
+    Use SequenceMatcher to return list of the best "good enough" matches.
+    
+    word is a sequence for which close matches are desired (typically a string).
+    
+    list_to_be_matched is a list of sequences against which to match word(typically a list of strings).
+    
+    Optional arg n (default 3) is the maximum number of close matches to return.  
+    n must be > 0.
+    
+    Optional arg cutoff or threshold (default 0.6) is a float in [0, 1].  
+    list_to_be_matched that don't score at least that similar to word are ignored.
+    
+    The best (no more than n) matches among the possibilities are returnedin a list, 
+    sorted by similarity score, most similar first.
+
+
+We need to match the input string by the user in all three cases (to make up for user mistakes) :
+		(i) each letter in upper case.
+		(ii) each letter in lower case.
+		(iii) first letter is in upper case and others in lower case.
+P.S. It is needed to be done as the get_close_matches() is case sensitive and 
+	only correct keys for the entered word are in data.json
+
+
+OUTPUT :
+	print the meaning of the entered word if found.
+	print all the closed_matches meanings of the entered words.

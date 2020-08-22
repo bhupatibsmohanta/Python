@@ -1,0 +1,17 @@
+Website Blocker with Python.
+
+The employees of Edulyt India can access internet through Edulyt Browser(GUI).
+The user have to enter the website(e.g. google.com, facebook.com etc.) they want to visit.
+The GUI will decide whether the user can have the acess to the entered website.
+If the user tries to visit blocked sites during working hours then an error message will pop up or else Google Chrome browser will open the mentioned website.
+
+Botton on the GUI will act as while-loop which will reponse each time it is clicked.
+On each click the program will acess the Blockedsite_Database file.
+if the entered website is in Blockedsite_Database then it will compare the access time with granted acess time.
+
+We can control Google Chrome browser using selenium python package which will require chromedriver.
+So, install chromedriver according to your chrome browser version. (My Google Chrome Version 83.0.4103.116.)
+
+Download your chromedriver.exe according to your Google Chrome Browser from the link below:
+https://chromedriver.chromium.org/downloads
+
